@@ -1,0 +1,43 @@
+﻿@page
+@model NWI2.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>GED</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GED.STUDENTINFO)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GED.STUDENTINFO)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GED.CLASSES)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GED.CLASSES)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GED.EMPLOYED)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GED.EMPLOYED)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GED.LOCATION)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GED.LOCATION)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.GED.VID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
